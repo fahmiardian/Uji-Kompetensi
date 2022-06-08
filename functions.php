@@ -14,12 +14,10 @@ function query($query){
 
 function cari($keyword){
 	$query = "SELECT * FROM tabelmahasiswa WHERE 
+	namamahasiswa LIKE '%$keyword%' OR 
 	NIM LIKE '%$keyword%' OR 
-	namamahasiswa LIKE '%$keyword%' OR 	
-	jurusan LIKE '%$keyword%' OR 
-	semester LIKE '%$keyword%'
-	alamat LIKE '%$keyword%'
-	notelp LIKE '%$keyword%'
+	semester LIKE '%$keyword%' OR 
+	jurusan LIKE '%$keyword%'
 	";
 	return query($query);
 }
