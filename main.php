@@ -36,7 +36,7 @@
             <li><a href="" class="nvr">Main Menu</a></li>
             <li><a href="" class="nvr">FAQ</a></li>
         </ul>
-        
+
         <div class="menu-toogle">
            <input type="checkbox">
            <span></span> 
@@ -56,7 +56,7 @@
 	</form>
 	<br>
 	<div class="fungsiphp">
-		<table border="1" cellpadding="10" cellspacing="0">
+		<table border="1" cellpadding="10" cellspacing="5">
 			<tr>
 				<th>No.</th>
 				<th>NIM</th>
