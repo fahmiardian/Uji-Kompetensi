@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #F6F6F6;
+}
+
+
+/* NAVBAR */
+nav{
+    display: flex;
+    background-color: #BAD7DF;
+    justify-content: space-around;
+    padding: 20px 10px;
+    color: black;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav .logo{
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 3px;
+    font-size: 0.8em;
+}
+
+nav ul li a:hover{
+    color: #FFE2E2;
+}
+
+/* logo hamburger */
+.menu-toogle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toogle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -5px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu-toogle span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #FFE2E2;;
+    border-radius:3px;
+    transition: 0.5s;
+}
+
+
+.badan{
+    padding: 20px 17%;
+    font-size: 20px;
+}
+
+.footer{
+    background-color: #99DDCC;
+    width: 100%;
+    height: 130px;
+    /* padding-bottom: 50px; */
+    margin-top: 60px;
+    display: flex;
+    
+}
+
+.fungsiphp{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.fungsiphp2{
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive breakpoint */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px){
+    nav ul{
+        width: 50%;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px){
+    .menu-toogle{
+        display: flex;
+    }
+    nav ul{
+        display: none;
+    }
+}
